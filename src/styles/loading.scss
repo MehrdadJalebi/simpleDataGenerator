@@ -1,0 +1,17 @@
+//************ loading ***********
+.container {
+  z-index: 1000000;
+  width: 100%;
+  height: 100vh;
+  top: 30%;
+  position: absolute;
+  background: #eeeeee4d;
+}
+.loading {
+  display: block;
+  position: absolute;
+  width: 200px;
+  top: 30vh;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}

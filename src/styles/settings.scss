@@ -1,0 +1,112 @@
+//*********** all of main styles ***********
+* {
+  font-family: 'IRANSans';
+}
+#app {
+  text-align: center;
+  color: $mainColor;
+}
+body {
+  padding: 0 60px;
+  margin: 0;
+  direction: rtl;
+}
+
+.header {
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  position: relative;
+  img {
+    margin: 10px;
+    height: 5vh;
+    max-height: 50px;
+  }
+}
+.sort{
+  background: url('./assets/sort.svg') no-repeat center center;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  float: left;
+  background-size: contain;
+  cursor: pointer;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+td, th {
+  border: 1px solid $tdBorder;
+  text-align: right;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: $trEvenChild;
+}
+
+input {
+  margin: 0 10px;
+  background: rgba(255,255,255,.1);
+  border-radius: 4px;
+  font-size: 15px;
+  outline: 0;
+  line-height: 1;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  background-color: $inputBg;
+  color:$mainColor;
+}
+
+button {
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 0 20px;
+  border: 0;
+  outline: 0;
+  color: $filterBtnColor;
+  background: $filterBtnBg;
+  font-size: 15px;
+}
+.pagination {
+  margin: 10px;
+  .button {
+    height: 45px;
+    align-items: center;
+    border-radius: 0;
+    outline: 0;
+    padding: 10px;
+    text-decoration: none;
+    border:1px solid $paginationBtnBorder;
+    border-left: 0;
+    color: $paginationBtnColor;
+    background: $paginationBtnBg;
+    &:last-child{
+      border-left :1px solid $paginationBtnBorder;
+    }
+    &.active {
+      background: $paginationBtnActiveBg;
+    }
+  }
+  .rounded-left {
+    border-radius: 5px 0 0 5px;
+  }
+  .rounded-right {
+    border-radius: 0 5px 5px 0;
+  }
+}
+
+.filters {
+  border: 1px solid $tdBorder;
+  padding: 10px;
+  display: flex;
+}
+@media screen and (max-width: 1440px){
+  body {
+    padding: 0;
+  }
+}
